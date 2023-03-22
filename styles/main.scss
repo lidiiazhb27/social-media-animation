@@ -1,0 +1,128 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/mixin';
+
+.color{
+    background-color: #f57460;
+}
+%margin-list{
+    margin-left: 29px;
+    margin-right: 29px;
+    margin-top: 80px;
+}
+%margin-list-hover{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 75px;
+}
+.block{
+    @include box (100%, 200px, $main-color);
+    margin-top: 100px;
+    display: flex;
+
+    &-one{
+        display: flex;
+        &-networks{
+            @include box (100px, 100%, #6dc5db);
+            display: flex;
+            margin-left: -1px;
+            transition-duration: 0.5s;
+            transition-property: width;
+            &-img img{
+                width: 40px;
+                height: 40px;
+                @extend %margin-list;
+            }
+        }
+        &-twitter{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-twitter:hover{
+            background: linear-gradient(to top, rgba(81,208,248,255), rgba(116,222,249,255));
+            border: solid 1px rgba(116,222,249,255);
+        }
+        &-facebook{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-facebook:hover{
+            background: linear-gradient(to top, rgba(45,105,166,255), rgba(88,134,182,255));
+            border: solid 1px rgba(88,134,182,255);
+        }
+        &-linkedin{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-linkedin:hover{
+            background: linear-gradient(to top, rgba(42,130,161,255), rgba(13,164,196,255));
+            border: solid 1px rgba(13,164,196,255);
+        }
+        &-instagram{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-instagram:hover{
+            background: linear-gradient(to top, rgba(92,139,49,255), rgba(130,186,37,255));
+            border: solid 1px rgba(130,186,37,255);
+        }
+        &-youtube{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-youtube:hover{
+            background: linear-gradient(to top, rgba(197,32,35,255), rgba(211,31,39,255));
+            border: solid 1px rgba(211,31,39,255);
+        }
+        &-tumblr{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-tumblr:hover{
+            background: linear-gradient(to top, rgba(42,78,110,255), rgba(61,54,66,255));
+            border: solid 1px rgba(61,54,66,255);
+        }
+        &-dribbble{
+            background: linear-gradient(to right, #6dc5db, #6dc5db);
+            border: solid 1px #65bdd3;
+        }
+        &-dribbble:hover{
+            background: linear-gradient(to top, rgba(236,114,162,255), rgba(222,59,114,255));
+            border: solid 1px rgba(222,59,114,255);
+        }
+        &-networks:hover{
+            @include box (500px, 100%, #ff0000);
+            cursor: pointer;
+        }
+        &-networks0{
+            @include box (500px, 100%, $main-color);
+            margin-left: -1px;
+        }
+        &-hidden{
+            @include box (400px, 100%, white);
+            &-name_icons{
+                font-size: 34px;
+                margin-left: 20px;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                font-family: sans-serif;
+            }
+            &-text{
+                width: 320px;
+                height: 100px;
+                font-size: 15px;
+                margin-left: 20px;
+            }
+        }
+        
+        
+    }
+    &-one:hover img{
+        width: 60px;
+        height: 60px;
+        @extend %margin-list-hover;
+    }
+}
+
+
+

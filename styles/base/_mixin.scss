@@ -1,0 +1,9 @@
+@mixin box ($w, $h, $bc) {
+     width: $w;
+     height: $h;
+     background-color: $bc;
+ } 
+// @include box (80%, 100px, bisque);
+
+
+
